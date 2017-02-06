@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# ülesanne 2
+#
+echo -n "Artur Aleksejev, "
+echo "ISP16"
+echo "tund meeldib"
+echo "sain hästi tunnis hakkama"
+#
+# skripti lõpp
