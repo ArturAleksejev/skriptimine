@@ -9,8 +9,11 @@ read arv
 if [ $arv -gt 0 ]
 then
     echo "$arv on positiivne"
-else
+elif [ $arv -lt 0 ]
+then
     echo "$arv on negatiivne"
+else
+    echo  "$arv on netraalne"
 fi
 
 
