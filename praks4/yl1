@@ -2,11 +2,17 @@
 #
 # arvu positiivsuse/negatiivsuse
 # küsime väärtused kasutaja käest
-echo -n "Sisesta arv: "
-read arv
+#kontrllime, kas kasutaja sissesta käsurea kaudu 1 parametri
+#kui mitte - trükime kasutusjuhend välja
+if [ $# -ne 1 ]; then
+echo "Kasutaja juhend"
+echo "$0 number"
+echo "naiteks $0 5"
+else
+arv=$1
 #kontrollime, kas arv on positiivne
 # sel juhul arv peab olema suurem kui 0
-if [ $arv -gt 0 ]
+if [ $arv -gt 1 ]
 then
     echo "$arv on positiivne"
 elif [ $arv -lt 0 ]
@@ -14,6 +20,7 @@ then
     echo "$arv on negatiivne"
 else
     echo  "$arv on netraalne"
+fi
 fi
 
 
