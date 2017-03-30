@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo -n "Kirjutage ridade arv: "
+read ridadearv
+echo -n "Kirjutage tarnide arv reas: "
+read tarnid
+for  (( i = 1 ; i <= $ridadearv ; i++ ))
+do
+	echo -n "$i ."
+	for (( j = 1 ; j <= $tarnid; j++ ))
+	do
+		echo -n "*"
+	done
+	echo ""
+done
