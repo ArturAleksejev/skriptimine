@@ -2,11 +2,11 @@
 #
 # kolmnurk vasakult paremale
 #
-for ((r=5; r>0; r--))
+for ((r=1; r<6; r++))
 do
 	# trükime reanumbri ilma reavahetuseta
-	#echo -n "$r"
-	for ((v=1; v<=$r+1; v++))
+	echo -n "$r"
+	for ((v=1; v<$((6-$r+1)); v++))
 	do
 	echo -n "* "
 	done
