@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# kolmnurk vasakult paremale
+#
+for ((r=1; r<7; r++))
+do
+	# trükime reanumbri ilma reavahetuseta
+	for ((v=1; v<$((6-$r+1)); v++))
+	do
+	echo -n "  "
+	done
+	for ((v=1; v<$r; v++))
+	do
+	echo -n "+ "
+	done
+	for ((v=1; v<$(($r+1)); v++))
+	do
+	echo -n "+ "
+	done
+	# kui rida lõpeb - reavahetus
+	echo
+done
