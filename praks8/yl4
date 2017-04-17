@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Kasutaja tervitus vastavalt sisestatud väärtusele
+
+echo -n "Sisestage palun kellaaeg 6-24: "
+read kellaaeg
+user=`whoami`
+
+
+if [ $kellaaeg -ge 6 -a $kellaaeg -lt 12 ]; then
+		echo "Tere hommikust, $user!"
+	elif [ $kellaaeg -ge 12 -a $kellaaeg -lt 18 ]; then
+		echo "Tere päevast, $user!"
+	elif [ $kellaaeg -ge 18 -a $kellaaeg -lt 22 ]; then
+		echo "Tere õhtust, $user!"
+	elif [ $kellaaeg -ge 22 -a $kellaaeg -lt 25 ]; then
+		echo "Head ööd, $user!"
+	elif [ $kellaaeg -ge 0 -a $kellaaeg -lt 6 ]; then
+		echo "Head ööd, $user!"
+	else
+	echo "Vale number"
+fi
+
