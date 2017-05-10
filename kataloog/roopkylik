@@ -1,0 +1,18 @@
+#!/bin/bash
+# Nimi: Artur Aleksejev
+# Skripti nimi: roopkylik
+# Skripti ülesanne: Joonistada kujund
+
+echo "Sisetage kujundi ridade arv"
+read arv
+
+while [ $arv -ge 1 ]
+do
+echo -n "$r"
+for ((i=1; i<$(($arv)); i++))
+do
+	echo -n " "
+done
+	arv=$((arv-1))
+	echo "*******"
+done
