@@ -1,0 +1,12 @@
+#!/bin/bash
+# Nimi: Artur Aleksejev
+# Skripti nimi: info
+# Skripti ülesanne: Tervitab sisselogitud kasutajat
+
+user=`whoami`
+
+echo "Tere $user"
+date=$(date +%d-%m-%Y)
+kell=$(date +%H-%M)
+echo "Täna on $date kell $kell"
+
